@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CESTA</title>
+    <link rel="stylesheet" type="text/css" href="Style.css" />
+    <link rel="Shortcut Icon" type="image/png" href="Images/Favicon.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Libre+Baskerville&family=Poppins&Secular+one&family=Acme&family=Ubuntu:wght@500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head> 
+  <body>
+    <section id="header">
+      <video autoplay loop muted plays-inline class="back-video">
+        <source src="Images/Video1.mp4" type="video/mp4" />
+      </video>
+      <nav>
+        <a href="Index.html"><img src="Images/Logo.png" /></a>
+        <div class="nav-links" id="navlinks">
+          <i class="fa fa-times" onclick="hidemenu()"></i>
+          <ul>
+            <li><a href="Index.html">HOME</a></li>
+            <li><a href="Events.html">EVENTS</a></li>
+            <li><a href="About.html">ABOUT US</a></li>
+            <li><a href="Contact.html">CONTACT US</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+      </nav>
+      <div class="banner-txt">
+        <h1>C E S T A</h1>
+        <p>DTC's Technical Society</p>
+        <a href="" class="hero-btn">Join Membership</a>
+      </div>
+    </section>
+    <!-- Upcoming Events And Results -->
+    <section>
+      <div class="hero">
+        <div class="btn-box">
+          <button id="btn1" onclick="OpenUpcEvent()">
+            <i class="fa fa-calendar-check-o"></i>Upcoming Events
+          </button>
+          <button id="btn2" onclick="OpenResults()">
+            <i class="fa fa-table"></i>Results
+          </button>
+        </div>
+        <div id="content1" class="content">
+          <div class="content-left">
+            <h1>UPCOMING EVENTS</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione
+              veniam eius, tempora iure ipsa aliquid dolores amet, a molestias,
+              accusamus v Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Libero dignissimos quaerat alias labore. Qui ratione nemo
+              necessitat
+            </p>
+            <div class="launch-time">
+              <div>
+                <p id="days">00</p>
+                <span>Days</span>
+              </div>
+              <div>
+                <p id="hours">00</p>
+                <span>Hours</span>
+              </div>
+              <div>
+                <p id="minutes">00</p>
+                <span>Minutes</span>
+              </div>
+              <div>
+                <p id="seconds">00</p>
+                <span>Seconds</span>
+              </div>
+            </div>
+            <a href="#"><i class="fa fa-play-circle"></i>REGISTER NOW</a>
+            <a href="Events.html" id="all-event"><i class="fa fa-table"></i>ALL EVENTS</a>
+          </div>
+          <div class="content-right">
+            <img src="Images/undraw_video_game_night_8h8m.svg" />
+          </div>
+        </div>
+        <div id="content2" class="content">
+          <div class="content-left">
+            <h1>RESULTS</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione
+              veniam eius, tempora iure ipsa aliquid dolores amet, a molestias,
+              accusamus vel! Ullam itaque laborum voluptatum excepturi
+              laudantium earum dolores! Quam? Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Aliquam perspiciatis veniam libero
+              in eum consequuntur totam fugit? Tempora asperiores in quia
+              perspiciatis. Dicta debitis ad, atque culpa voluptatem enim
+              provident!
+            </p>
+            <a href="#"><i class="fa fa-handshake-o"></i>CONGRATS</a>
+          </div>
+          <div class="content-right">
+            <img src="Images/Tab2.webp" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!------------- --About Us ------------------>
+    
+    <!-- --------CONTACT US------ -->
+    <footer>
+      <div class="row">
+          <div class="col">
+              <img src="Images/Logo.png" class="footer_logo">
+              <p class="footer_about">CESTA, Computer Technical Society functions under the Computer
+                Science and Engineering Department. This society runs by the
+                students under the guidance of faculty and technical society heads.
+              </p>
+          </div>
+          <div class="col">
+              <h3>CAMPUS <div class="bottom_line"><span></span></div></h3>
+              <p>28, 1, Knowledge Park III</p>
+              <p>Greater Noida</p>
+              <p>Uttar Pradesh - 201306</p>
+              <p class="footer_email">cestadtc@delhitechnicalcampus.ac.in</p>
+          </div>
+          <div class="col">
+              <h3>Links <div class="bottom_line"><span></span></div></h3>
+              <ul>
+                  <li><a href="">HOME</a></li>
+                  <li><a href="">EVENTS</a></li>
+                  <li><a href="">ABOUT US</a></li>
+                  <li><a href="">CONTACT US</a></li>
+              </ul>
+          </div>
+          <div class="col">
+            
+            <form action="//submit.form" id="ContactUs100" method="post" onsubmit="return ValidateForm(this);">
+              <script type="text/javascript">
+              function ValidateForm(frm) {
+              if (frm.Name.value == "") { alert('Name is required.'); frm.Name.focus(); return false; }
+              if (frm.FromEmailAddress.value == "") { alert('Email address is required.'); frm.FromEmailAddress.focus(); return false; }
+              if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) { alert('Please enter a valid email address.'); frm.FromEmailAddress.focus(); return false; }
+              if (frm.Comments.value == "") { alert('Please enter comments or questions.'); frm.Comments.focus(); return false; }
+              return true; }
+              </script>
+              <table style="width:100%;max-width:550px;border:0;" cellpadding="8" cellspacing="0">
+              <tr> <td>
+              <label for="Name">Name*:</label>
+              </td> <td>
+              <input name="Name" type="text" maxlength="60" style="color:white;width:100%;max-width:250px;" />
+              </td> </tr> <tr> <td>
+              <label for="PhoneNumber">Phone number:</label>
+              </td> <td>
+              <input name="PhoneNumber" type="text" maxlength="43" style="color:white;width:100%;max-width:250px;" />
+              </td> </tr> <tr> <td>
+              <label for="FromEmailAddress">Email address*:</label>
+              </td> <td>
+              <input name="FromEmailAddress" type="text" maxlength="90" style="color:white;width:100%;max-width:250px;" />
+              </td> </tr> <tr> <td>
+              <label for="Comments">Comments*:</label>
+              </td> <td>
+              <textarea name="Comments" rows="7" cols="40" style="width:100%;max-width:350px;"></textarea>
+              </td> </tr> <tr> <td>
+              * - required fields
+              </td> <td>
+              <input name="skip_Submit" type="submit" value="Submit" />
+              </td> </tr>
+              </table>
+              </form>
+               </section>
+          </div>
+      </div>
+      <hr>
+      <p class="copyright">CESTA Ⓒ 2022 - All Rights Reserved</p>
+   </footer>
+  </body>
+  <script src="Script.js"></script>
+</html>

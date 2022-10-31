@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us</title>
+        <link rel="Shortcut Icon" type="image/png" href="Images/Favicon.jpg" />
+        <link rel="stylesheet" href="Style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    </head>
+    <body>
+         <section id="header">
+            <video autoplay loop muted plays-inline class="back-video">
+              <source src="Images/Video2.mp4" type="video/mp4" />
+            </video>
+            <nav>
+              <a href="Index.html"><img src="Images/Logo.png" /></a>
+              <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                  <li><a href="Index.html">HOME</a></li>
+                  <li><a href="Events.html">EVENTS</a></li>
+                  <li><a href="About.html">ABOUT US</a></li>
+                  <li><a href="Contact.html">CONTACT US</a></li>
+                </ul>
+              </div>
+              <i class="fa fa-bars" onclick="showmenu()"></i>
+            </nav>
+            <div class="banner-txt">
+              <h1>CONTACT US</h1>
+              <a href="" class="hero-btn">Join Membership</a>
+            </div>
+          </section>
+          
+      <section>
+        <div class="container">
+           <div class="content1">
+             <div class="left-side">
+               <div class="address details">
+                 <i class="fas fa-map-marker-alt"></i>
+                 <div class="topic">Address</div>
+                 <div class="text-one">28, 1, Knowledge Park III</div>
+                 <div class="text-two">Greater Noida, Uttar Pradesh - 201306</div>
+               </div>
+               <div class="phone details">
+                 <i class="fas fa-phone-alt"></i>
+                 <div class="topic">Phone</div>
+                 <div class="text-one">+91 111 111 1111</div>
+                 <div class="text-two">+91 222 222 2222</div>
+               </div>
+               <div class="email details">
+                 <i class="fas fa-envelope"></i>
+                 <div class="topic">Email</div>
+                 <div class="text-one">cestadtc@delhitechnicalcampus.ac.in</div>
+               </div>
+             </div>
+             <div class="right-side">
+               <div class="topic-text">Send us a message</div>
+               <p>If you have any querry, don't hesitate to ask us. We are here to help you. Send us your querry through this form directly:</p>
+             <form action="#">
+               <div class="input-box">
+                 <input type="text" placeholder="Enter your querry">
+               </div>
+               <div class="input-box">
+                 <input type="text" placeholder="Enter your email">
+               </div>
+               <div class="input-box message-box">
+                 
+               </div>
+               <div class="button">
+                 <input type="button" value="Send Now" >
+               </div>
+             </form>
+           </div>
+           </div>
+         </div>
+     </section>
+          <section class="contactUs">
+            <h1>CONTACT US ON SOCIAL MEDIA</h1>
+            <div class="wrapper">
+              <div class="button">
+                 <div class="icon1">
+                    <a href="https://www.facebook.com/cestadtc" target="_blank"><i class="fab fa-facebook-f"></i>
+                 </div>
+                 <span>Facebook</span></a>
+              </div>
+              <div class="button">
+                 <div class="icon1">
+                  <a href="https://www.linkedin.com/company/cesta-computer-science-club-of-delhi-technical-campus/" target="_blank"><i class="fab fa-linkedin"></i>
+                 </div>
+                 <span>LinkedIn</span></a>
+              </div>
+              <div class="button">
+                 <div class="icon1">
+                  <a href="https://instagram.com/cesta_dtc?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fab fa-instagram"></i>
+                 </div>
+                 <span>Instagram</span></a>
+              </div>
+              <div class="button">
+                 <div class="icon1">
+                  <a href="https://discord.gg/knZuyUsU" target="_blank"><i class="fab fa-discord"></i>
+                 </div>
+                 <span>Discord</span></a>
+              </div>
+              <div class="button">
+                 <div class="icon1">
+                  <a href="https://github.com/cestasociety" target="_blank"><i class="fab fa-github"></i>
+                 </div>
+                 <span>Github</span></a>
+              </div>
+           </div>
+             </section>
+             <footer>
+              <div class="row">
+                  <div class="col">
+                      <img src="Images/Logo.png" class="footer_logo">
+                      <p class="footer_about">CESTA, Computer Technical Society functions under the Computer
+                        Science and Engineering Department. This society runs by the
+                        students under the guidance of faculty and technical society heads.
+                      </p>
+                  </div>
+                  <div class="col">
+                      <h3>CAMPUS <div class="bottom_line"><span></span></div></h3>
+                      <p>28, 1, Knowledge Park III</p>
+                      <p>Greater Noida</p>
+                      <p>Uttar Pradesh - 201306</p>
+                      <p class="footer_email">cestadtc@delhitechnicalcampus.ac.in</p>
+                  </div>
+                  <div class="col">
+                      <h3>Links <div class="bottom_line"><span></span></div></h3>
+                      <ul>
+                          <li><a href="">HOME</a></li>
+                          <li><a href="">EVENTS</a></li>
+                          <li><a href="">ABOUT US</a></li>
+                          <li><a href="">CONTACT US</a></li>
+                      </ul>
+                  </div>
+                  <div class="col">
+                    
+                    <form action="//submit.form" id="ContactUs100" method="post" onsubmit="return ValidateForm(this);">
+                      <script type="text/javascript">
+                      function ValidateForm(frm) {
+                      if (frm.Name.value == "") { alert('Name is required.'); frm.Name.focus(); return false; }
+                      if (frm.FromEmailAddress.value == "") { alert('Email address is required.'); frm.FromEmailAddress.focus(); return false; }
+                      if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) { alert('Please enter a valid email address.'); frm.FromEmailAddress.focus(); return false; }
+                      if (frm.Comments.value == "") { alert('Please enter comments or questions.'); frm.Comments.focus(); return false; }
+                      return true; }
+                      </script>
+                      <table style="width:100%;max-width:550px;border:0;" cellpadding="8" cellspacing="0">
+                      <tr> <td>
+                      <label for="Name">Name*:</label>
+                      </td> <td>
+                      <input name="Name" type="text" maxlength="60" style="color:white;width:100%;max-width:250px;" />
+                      </td> </tr> <tr> <td>
+                      <label for="PhoneNumber">Phone number:</label>
+                      </td> <td>
+                      <input name="PhoneNumber" type="text" maxlength="43" style="color:white;width:100%;max-width:250px;" />
+                      </td> </tr> <tr> <td>
+                      <label for="FromEmailAddress">Email address*:</label>
+                      </td> <td>
+                      <input name="FromEmailAddress" type="text" maxlength="90" style="color:white;width:100%;max-width:250px;" />
+                      </td> </tr> <tr> <td>
+                      <label for="Comments">Comments*:</label>
+                      </td> <td>
+                      <textarea name="Comments" rows="7" cols="40" style="width:100%;max-width:350px;"></textarea>
+                      </td> </tr> <tr> <td>
+                      * - required fields
+                      </td> <td>
+                      <input name="skip_Submit" type="submit" value="Submit" />
+                      </td> </tr>
+                      </table>
+                      </form>
+                       </section>
+                  </div>
+              </div>
+              <hr>
+              <p class="copyright">CESTA Ⓒ 2022 - All Rights Reserved</p>
+           </footer>
+    </body>
+    <script src="Script.js"></script>
+</html>
